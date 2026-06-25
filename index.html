@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Tes Potensi by @aldkusm</title>
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- LOGIN -->
+
+<div id="loginPage" class="center">
+
+<div class="card loginCard">
+
+<h1>Tes Potensi by @aldkusm</h1>
+
+<input
+type="text"
+id="nameInput"
+placeholder="Nama Peserta">
+
+<input
+type="text"
+id="examCodeInput"
+placeholder="Kode Ujian">
+
+<button id="loginBtn">
+Mulai Tes
+</button>
+
+<p id="errorText"></p>
+
+</div>
+
+</div>
+
+<!-- EXAM -->
+
+<div id="examPage" class="hidden">
+
+<header>
+
+<div>
+<h2>Tes Potensi by @aldkusm</h2>
+<p id="participantName"></p>
+</div>
+
+<div id="timer">
+60:00
+</div>
+
+</header>
+
+<div class="content">
+
+<aside>
+
+<h3>Progress</h3>
+
+<p id="progressText">
+0 / 0
+</p>
+
+<div id="navigation"></div>
+
+</aside>
+
+<main>
+
+<p id="category"></p>
+
+<h2 id="questionText"></h2>
+
+<div id="optionsContainer"></div>
+
+<div class="actionButtons">
+
+<button id="prevBtn">
+Sebelumnya
+</button>
+
+<button id="nextBtn">
+Selanjutnya
+</button>
+
+</div>
+
+<button id="submitBtn">
+Selesaikan Tes
+</button>
+
+</main>
+
+</div>
+
+</div>
+
+<!-- RESULT -->
+
+<div id="resultPage" class="hidden">
+
+<div class="resultCard">
+
+<h1>HASIL TES</h1>
+
+<div class="scoreCard">
+
+<h2 id="resultName"></h2>
+
+<h1 id="scoreNumber"></h1>
+
+<p id="scoreCategory"></p>
+
+<p id="summaryText"></p>
+
+</div>
+
+<div id="reviewContainer"></div>
+
+</div>
+
+</div>
+
+<script src="questions.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
